@@ -2,6 +2,13 @@
 
 ## Project description
 This project aims to predict the respiratory rate of an individual which is a time-series data with temporal dependence. 
+The following parts explain characterstics of the data and various pre-processing techniques used to remove noise and clean the data. The learning model used is a Recurrent Neural Network using LSTMs.
+
+## Libraries used
+* Tensorflow (for Machine Learning)
+* Pandas (for File Handling)
+* Scikit-learn (for Pre-processing)
+
 
 ## Data
 The data provided is the accelerometer data worn by the individual on the wrist and the ankle. An EDA is performed on this data and 52 features are provided as the input. 
@@ -35,4 +42,6 @@ As seen in the figure, at some timesteps, the rise in the respiratory rate is un
 <p align="center">
    <img src="assets/grad_thresh.png" width="60%">
 </p>
+
+We can now use the timestamps, to divide our training dataset into 4 different  
 

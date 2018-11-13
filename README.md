@@ -9,3 +9,12 @@ The data provided is the accelerometer data worn by the individual on the wrist 
 A sample part of the respiratory curve is shown below:
 
 <img src="assets/fig1.png" width="60%">
+
+The entire respiratory rate available from the data is spread across time as shown:
+
+<img src="assets/fig2.png" width="60%">
+
+
+## Approach
+
+

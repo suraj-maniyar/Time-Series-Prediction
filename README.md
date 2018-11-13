@@ -5,9 +5,9 @@ This project aims to predict the respiratory rate of an individual which is a ti
 The following parts explain characterstics of the data and various pre-processing techniques used to remove noise and clean the data. The learning model used is a Recurrent Neural Network using LSTMs.
 
 ## Libraries used
-* Tensorflow (for Machine Learning)
-* Pandas (for File Handling)
-* Scikit-learn (for Pre-processing)
+* **Tensorflow** (for Machine Learning)
+* **Pandas** (for File Handling)
+* **Scikit-learn** (for Pre-processing)
 
 
 ## Data

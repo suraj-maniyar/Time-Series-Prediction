@@ -47,7 +47,7 @@ We can now use the timestamps, to divide our training dataset into 3 different s
 The 3 sets are shown below:
 
 <p align="center">
-   <img src="assets/sets.png" width=300>
+   <img src="assets/sets.png" width="300">
 </p>
 
 

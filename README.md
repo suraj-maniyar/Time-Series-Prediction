@@ -52,7 +52,7 @@ The 3 sets are shown below:
 
 
 ### Dimensionality 
-The data in the CSV files consists of the raw accelerometer values, gyroscpoe values both from wrist and ankle, along with the body temperature, the environmental temperature, the heart-rate followed by a various statistics from these features such as Variances, Covariances, Skewness, Kurtosis etc.
+The data in the CSV files consists of the raw accelerometer values, gyroscpoe values both from wrist and ankle, along with the body temperature, the environmental temperature, the heart-rate followed by a various statistics from these features such as Variances, Covariances, Skewness, Kurtosis etc.  
 In total, there are 52 total dimensions to chacterize the respiratory-rate value. Since, we need not use all the 52 features, we use Dimensionality Reduction to reduce the number of computations.
-We first run PCA and keep all the 52 features  
+We first run PCA and keep all the 52 features 
 

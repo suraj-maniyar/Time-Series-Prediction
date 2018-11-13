@@ -37,17 +37,22 @@ We observe that there are spikes occurring in the dataset due to noisy measureme
    <img src="assets/grad.png" width="60%">
 </p>
 
-As seen in the figure, at some timesteps, the rise in the respiratory rate is unrealistic. To mark down these values, we set a threshold on the change in values. If the rise is higher than this threshold, the user has possible changed the action drastically or the sensor reading has acquired noise. The thresholded first order derivative is shown below (threshold value = 5):
+As seen in the figure, at some timesteps, the rise in the respiratory rate is unrealistic. To mark down these values, we set a threshold on the change in values. If the rise is higher than this threshold, the user has possibly changed the action drastically or the sensor reading has acquired noise. The thresholded first order derivative is shown below (threshold value = 5):
 
 <p align="center">
    <img src="assets/grad_thresh.png" width="60%">
 </p>
 
-We can now use the timestamps, to divide our training dataset into 3 different sets. We will train the model on each of the set individually.
+We can now use the timestamps, to divide our training dataset into 3 different sets. We will train the model on each of the sets individually.
 The 3 sets are shown below:
 
 <p align="center">
    <img src="assets/sets.png" width=70%">
 </p>
 
+
+### Dimensionality 
+The data in the CSV files consists of the raw accelerometer values, gyroscpoe values both from wrist and ankle, along with the body temperature, the environmental temperature, the heart-rate followed by a various statistics from these features such as Variances, Covariances, Skewness, Kurtosis etc.
+In total, there are 52 total dimensions to chacterize the respiratory-rate value. Since, we need not use all the 52 features, we use Dimensionality Reduction to reduce the number of computations.
+We first run PCA and keep all the 52 features  
 

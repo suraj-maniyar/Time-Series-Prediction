@@ -8,5 +8,5 @@ The data provided is the accelerometer data worn by the individual on the wrist 
 
 A sample part of the respiratory curve is shown below:
 
-![alt text](assets/fig1.png)
+![](assets/fig1.png = 250x250)
 

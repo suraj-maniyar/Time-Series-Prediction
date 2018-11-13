@@ -43,5 +43,11 @@ As seen in the figure, at some timesteps, the rise in the respiratory rate is un
    <img src="assets/grad_thresh.png" width="60%">
 </p>
 
-We can now use the timestamps, to divide our training dataset into 4 different  
+We can now use the timestamps, to divide our training dataset into 3 different sets. We will train the model on each of the set individually.
+The 3 sets are shown below:
+
+<p align="center">
+   <img src="assets/sets.png">
+</p>
+
 

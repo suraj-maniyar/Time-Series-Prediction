@@ -12,7 +12,7 @@ A sample part of the respiratory curve is shown below:
 
 The entire respiratory rate available from the data is spread across time as shown:
 
-<img src="assets/RR_zoomed.png" width="60%">
+<img src="assets/RR_total.png" width="60%">
 
 
 ## Approach

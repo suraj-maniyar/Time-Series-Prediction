@@ -6,3 +6,7 @@ This project aims to predict the respiratory rate of an individual which is a ti
 ## Data
 The data provided is the accelerometer data worn by the individual on the wrist and the ankle. An EDA is performed on this data and 52 features are provided as the input. 
 
+A sample part of the respiratory curve is shown below:
+
+![alt text](assets/fig1.png)
+

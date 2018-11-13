@@ -8,16 +8,18 @@ The data provided is the accelerometer data worn by the individual on the wrist 
 
 A sample part of the respiratory curve is shown below:
 
-<img src="assets/RR_zoomed.png" width="60%">
+<img src="assets/RR_zoomed.png" width="50%">
 
 The entire respiratory rate available from the data is spread across time as shown:
 
-<img src="assets/RR_total.png" width="60%">
+<img src="assets/RR_total.png" width="50%">
 
 
 ## Approach
 
 ### Data Pre-processing
 
-We observe that there are spikes occurring in the dataset due to noisy measurements. So to remove the noise, we take the first order derivative and set a threshold 
+We observe that there are spikes occurring in the dataset due to noisy measurements. So to remove the noise, we take the first order derivative to see the amount of variations in consecutive time steps. The first order derivative looks like this:
+
+<img src="assets/grad.png" width="50%">
 

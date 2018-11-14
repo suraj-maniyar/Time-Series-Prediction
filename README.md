@@ -1,4 +1,4 @@
-# Respiratory-Rate-Estimation
+# Respiratory Rate Estimation (Time Series Forcasting)
 
 ## Project description
 This project aims to predict the respiratory rate of an individual which is a time-series data with temporal dependence. 

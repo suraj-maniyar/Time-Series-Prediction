@@ -53,6 +53,6 @@ The 3 sets are shown below:
 
 ### Dimensionality 
 The data in the CSV files consists of the raw accelerometer values, gyroscpoe values both from wrist and ankle, along with the body temperature, the environmental temperature, the heart-rate followed by a various statistics from these features such as Variances, Covariances, Skewness, Kurtosis etc.  
-In total, there are 52 total dimensions to chacterize the respiratory-rate value. Since, we need not use all the 52 features, we use Dimensionality Reduction to reduce the number of computations.
-We first run PCA and keep all the 52 features 
-
+In total, there are 52 total dimensions to chacterize the respiratory-rate value. Since, we need not use all the 52 features, we use Dimensionality Reduction to reduce the number of computations. We first run PCA keeping all the 52 features and calculate the variances of each of the 52 components. The **total variance** is the sum of variances of all individual components. The fraction of **variance explained** by a principal component is the ratio between the variance of that principal component and the total variance. We use the "explained variance ratio" attribute provided by sklearn to know the contribution of each of the components and choose the top k components that explain most of the data.  
+In our case, we choose a threshold of 1e-5 and only choose those components, whose explained variance ratio is greater than this value. The total number of components we chose is 10.  
+So now, our input feature vector becomes a 10 Dimensional vector. 

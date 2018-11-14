@@ -59,9 +59,11 @@ So now, our input feature vector becomes a 10-Dimensional vector.
 
 
 ### Feature-Scaling
-The values of the feature points after PCA is in the range of 10e4. So we apply a Standard Scaler to the data which standardizes the features by removing the mean and scaling them to unit variance.    
-
+The values of the feature points after PCA is in the range of 10e4. So we apply a Standard Scaler to the data which standardizes the features by removing the mean and scaling them to unit variance.   
 Now we have our data ready to be fed into model. 
 
-## Model
-We use LSTMs for time series forcasting. We feed the data sequentially. Considering the sequence length to be L and current time to be T, the input to the model will be the features from (T-1) to (T-L) time steps and the output will be the respiratory at current time T.
+## Deep Learning Model
+We use LSTMs for time series forcasting. We feed the data sequentially. Considering the sequence length to be L and current time to be T, the input to the model will be the features from (T-1) to (T-L) time steps and the output will be the respiratory at current time T.  
+The problem at hand is a regression problem as the output is a real number. So we use MSE as the loss and Adam optimizer for convergence.
+
+

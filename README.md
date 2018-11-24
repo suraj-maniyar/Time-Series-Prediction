@@ -2,7 +2,7 @@
 
 ## Project description
 This project aims to predict the respiratory rate of an individual which is a time-series data with temporal dependence. 
-The following parts explain characterstics of the data and various pre-processing techniques used to remove noise and clean the data. The learning model used is a Recurrent Neural Network using LSTMs.
+The following sections explain characterstics of the data and various pre-processing techniques used to remove noise and clean the data. The learning model used is a Recurrent Neural Network using LSTMs.
 
 ## Libraries used
 * **Tensorflow** (for Machine Learning)

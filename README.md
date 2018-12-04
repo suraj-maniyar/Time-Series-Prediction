@@ -67,7 +67,13 @@ We use LSTMs for time series forcasting. We feed the data sequentially. Consider
 The problem at hand is a regression problem as the output is a real number. So we use MSE as the loss and Adam optimizer for convergence.
 
 ## Results
-We used 2 LSTM layers with 128 cells each. The results are shown below : 
+We used 2 LSTM layers with 128 cells each.  
+Parameters :  
+Epochs : 20  
+Batch Size : 128  
+LSTM : 128 cells x 2 layers  
+Learning Rate : 0.0001  
+The results are shown below : 
 
 <p align="center">
    <img src="assets/Loss_128x128.png" width=70%">

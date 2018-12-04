@@ -66,4 +66,15 @@ Now we have our data ready to be fed into model.
 We use LSTMs for time series forcasting. We feed the data sequentially. Considering the sequence length to be L and current time to be T, the input to the model will be the features from (T-1) to (T-L) time steps and the output will be the respiratory at current time T.  
 The problem at hand is a regression problem as the output is a real number. So we use MSE as the loss and Adam optimizer for convergence.
 
+## Results
+We used 2 LSTM layers with 128 cells each. The results are shown below : 
 
+<p align="center">
+   <img src="assets/Loss_128x128.png" width=70%">
+</p>
+
+<p align="center">
+   <img src="assets/Prediction_128x128.png" width=70%">
+</p>
+
+The final RMSE Loss is : 4.58
